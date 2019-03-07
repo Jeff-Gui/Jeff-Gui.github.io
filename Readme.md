@@ -1,3 +1,9 @@
 # Welcome
 GitHub repository for IBI1 2018/19 at ZJU/UoE
 I'm Jeff, a ZJE Biomediacl Informatics undergraduate student.
+<<<<<<< Updated upstream
+=======
+_blabla_
+*bla*
+\_blabla
+>>>>>>> Stashed changes
