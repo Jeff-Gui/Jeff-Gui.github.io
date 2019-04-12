@@ -1,7 +1,4 @@
 # Welcome
 GitHub repository for IBI1 2018/19 at ZJU/UoE
-I'm Jeff, a ZJE Biomediacl Informatics undergraduate student.
-_blabla_
-*bla*
-\_blabla
-Stashed changes
+I'm Jeff, a ZJE Biomedical Informatics undergraduate student.
+Contact me: Yifan.18@intl.zju.edu.cn
