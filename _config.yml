@@ -1,3 +1,4 @@
+remote_theme: christianezeani/panthera-jekyll
 defaults:
   -
     scope:
@@ -6,8 +7,8 @@ defaults:
     values:
       layout: default
 
-title: Christian Ezeani
-subtitle: Full-Stack Developer
+title: Jeff Gui (Yifan)
+subtitle: Biomdeidcal Informatics Undergraduate
 
 # left_side:
 #   background_image: "./assets/images/left-background.jpg"
