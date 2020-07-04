@@ -1,0 +1,92 @@
+---
+title: "Playground"
+author: "Jeff"
+date: "5/22/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+# Methods
+
+```{r}
+# Difference within or between group
+group_dif = function(x){
+  # input: dataframe, first n column be group, last column be value
+  same_group_diff = {}
+  between_group_diff = {}
+  n = dim(x)[2]-1 # n group columns
+  for (i in 1:(dim(x)[1]-1)){
+    for (j in (i+1):dim(x)[1]){
+      diff = abs(x[i,n+1]- x[j,n+1])
+      if (sum(x[i,1:n]==x[j,1:n])==n){ 
+        # only all the group same will be considered as same.
+          same_group_diff = c(same_group_diff,diff)
+        } else {
+          between_group_diff = c(between_group_diff, diff)
+        }
+    }
+  }
+  return(list("same_group_diff"=same_group_diff,
+              "between_group_diff"=between_group_diff))
+}
+
+# sampling error and mean (for t test assumption)
+sample_Se_Mean = function(x,n){
+  # x: vector data, n: bootstrap times
+  sampling_errors = vector() 
+  sampling_means = vector()
+  for (replicate in 1:n){
+    BSsample = sample(x, size = length(x), replace = TRUE) 
+    standard_error = sd(BSsample)/sqrt(length(BSsample)) 
+    sampling_errors = c(sampling_errors, standard_error) 
+    sampling_means = c(sampling_means, mean(BSsample))
+  }
+  lmfit = lm(sampling_errors~sampling_means)
+  return(list("sampling_errors"=sampling_errors,"sampling_means"=sampling_means,
+              "lmfit"=lmfit))
+}
+
+# bootstrapping CI for binary counting data
+bt_bin_CI = function(x,y,n){
+  # x:count of category 1, e.g. infected ; y: total count
+  # n: bootstrap times
+  # method: case resampling; output: confidence interval of x
+  obs_sample = c(rep("1",x),rep("2",y-x))
+  bt = 1:n
+  for (b in 1:n){
+    bt_sample = sample(obs_sample, y,replace = T)
+    bt[b] = sum(bt_sample=="1")
+  }
+ lower_ci = quantile(bt, 0.025)/y
+ upper_ci = quantile(bt, 0.975)/y
+ return(list("low_CI"=lower_ci,"up_CI"=upper_ci))
+}
+#bt_bin_CI(18,80796,100)
+
+# bootstrapping CI for numeric data (between groups)
+bt_num_CI = function(x,n){
+  # x: dataframe:gruop~value
+  # n: bootstrap times
+  # method: case resampling
+  allc = summary(as.factor(x[,1]))
+  result=list()
+  for (g in names(allc)){
+    means=1:n
+    for (i in 1:n){
+      means[i] =  mean(sample(x[,2],allc[g],replace = T))
+    }
+    lower_ci = quantile(means, 0.025)
+    upper_ci = quantile(means, 0.975)
+    this_group = list(list("low_CI"=lower_ci, "up_CI"=upper_ci))
+    names(this_group) = g
+    result = c(result, this_group)
+  }
+  return(result)
+}
+#bt_num_CI(data.frame("Country"=c(rep("A",100),rep("B",100)),"Value"=rnorm(200)),100)
+```
