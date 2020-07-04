@@ -1,4 +1,4 @@
-remote_theme: Jeff-Gui/Jeff-Gui.github.io
+# remote_theme: Jeff-Gui/Jeff-Gui.github.io
 defaults:
   -
     scope:
@@ -55,6 +55,4 @@ social_icons:
   #   link: https://www.facebook.com/christian.ezeani.cyb
   #   icon: fab fa-facebook-square
 
-
-
-    
+github: [metadata]
