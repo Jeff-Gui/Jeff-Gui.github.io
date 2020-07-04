@@ -10,14 +10,14 @@ defaults:
 title: Jeff Gui (Yifan)
 subtitle: Biomdeidcal Informatics Undergraduate
 
-# left_side:
-#   background_image: "./assets/images/left-background.jpg"
-#   background_color: "#F00"
-#   close_button_color: "#F00"
-#   text_color: "#F00"
+left_side:
+  background_image: "./assets/images/left-background.jpeg"
+  background_color: "#F00"
+  close_button_color: "#F00"
+  text_color: "#F00"
 
 footer:
-  copyright_text: "&copy; Christian Ezeani"
+  copyright_text: "&copy; Jeff"
 
 # Side Menu Links
 menu:
@@ -25,8 +25,12 @@ menu:
     link: /
     icon: ""
 
-  - text: Skills & Offers
-    link: /skills-and-offers
+  # - text: Skills & Offers
+  #   link: /skills-and-offers
+  #   icon: ""
+
+  - text: Bioinformatics Notes
+    link: /bmi
     icon: ""
 
   - text: Contact Me
@@ -39,21 +43,18 @@ menu:
 
 # Socialmedia Icons
 social_icons:
-  - name: linkedin
-    link: https://www.linkedin.com/christianezeani
-    icon: fab fa-linkedin
+  # - name: linkedin
+  #   link: https://www.linkedin.com/christianezeani
+  #   icon: fab fa-linkedin
 
   - name: github
-    link: https://github.com/christianezeani
+    link: https://github.com/Jeff-Gui
     icon: fab fa-github-square
 
-  - name: facebook
-    link: https://www.facebook.com/christian.ezeani.cyb
-    icon: fab fa-facebook-square
+  # - name: facebook
+  #   link: https://www.facebook.com/christian.ezeani.cyb
+  #   icon: fab fa-facebook-square
 
-  - name: twitter
-    link: https://www.twitter.com/christianezeani
-    icon: fab fa-twitter
 
 
     
