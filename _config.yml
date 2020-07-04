@@ -1,4 +1,4 @@
-remote_theme: christianezeani/panthera-jekyll
+remote_theme: Jeff-Gui/Jeff-Gui.github.io
 defaults:
   -
     scope:
