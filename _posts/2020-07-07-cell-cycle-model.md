@@ -12,8 +12,8 @@ Cell cycle is an awesome orchestration of colossal molecules in the elaborate ce
 
 
 
-1. The study of protein interaction dynamics during the cell cycle - to discuss how certain group of proteins contribute to an overall function. For example, <a href="https://dx.doi.org/10.1016/j.cell.2016.11.034">Nurse group, 2016</a> has provided proteomic evidence about the dependence of driving kinase - substrate interaction on substrate activity.
-2. The study of cell cycle progression kinetics - to characterize key events (checkpoints, commitment points, etc.) and predict the existence of functional proteins.
+1. Study of protein interaction dynamics during the cell cycle - to discuss how certain group of proteins contribute to an overall function. For example, <a href="https://dx.doi.org/10.1016/j.cell.2016.11.034">Nurse group, 2016</a> has provided proteomic evidence about the dependence of driving kinase - substrate interaction on substrate activity.
+2. Study of cell cycle progression kinetics - to characterize key events (checkpoints, commitment points, etc.) and predict the existence of functional proteins.
 
 If we are able to establish a working cell cycle model based on defined protein interactions, then we are confident that we have interpreted the protein function correctly. If the model cannot capture cell cycle features, commonly the case, a _refinement_ of the model with more parameters, different kinetic formulas i.e., modelling approaches may reveal undiscovered features. However, a formula with unresolved _biological meaning_ is exposed to critics (e.g. over-fitting).
 
