@@ -25,12 +25,12 @@ If we are able to establish a working cell cycle model based on defined protein 
 ## Binomial, Poisson, Exponential and Gamma distribution
 
 The probability of obtaining $n$ binary outcomes from $n$ Bernoulli trials follows Binomial distribution.
-<br/>
 
-$$\begin{gather}
- PMF_{B(n, p)} = P(X = k) = \tbinom{n}{k}p^k(1-p)^{n-k}
-\end{gather}$$
-
+$$
+\begin{gather}
+PMF_{B(n, p)} = P(X = k) = \tbinom{n}{k}p^k(1-p)^{n-k}
+\end{gather}
+$$
 
 
 ## A basic cell cycle model
