@@ -1,7 +1,7 @@
 ---
 title: Journal club - cell cycle model and Gamma distribution
 categories:
-    - computational biology
+    - journal club
 tags:
     - modeling
     - probability distribution
