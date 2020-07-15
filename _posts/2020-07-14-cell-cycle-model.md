@@ -8,7 +8,7 @@ tags:
     - cell cycle
 ---
 
-Cell cycle is an elaborate orchestration of colossal molecules in the elaborate cell machine. Analogous to the central theorem, genetic code to protein expression and phenotypes as molecular interactions to cell cycle progression, which means there can be two kinds of studies that meat each halfway:
+Cell cycle is an orchestration of colossal molecules in the elaborate cell machine. Analogous to the central theorem, genetic code to protein expression and phenotypes as molecular interactions to cell cycle progression, which means there can be two kinds of studies that meat each halfway:
 
 
 
