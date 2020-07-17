@@ -1,5 +1,5 @@
 ---
-title: Journal club - cell cycle model and Gamma distribution
+title: Journal club - Modeling the cell cycle -- Just Timing
 categories:
     - journal club
 tags:
